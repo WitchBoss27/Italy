@@ -43,54 +43,46 @@
         </header>
 
         <section class="map-stage" aria-label="Map of Italy with destination markers">
-          <div class="travel-icons" aria-hidden="true">
-            <span>🍷</span>
-            <span>🍋</span>
-            <span>🚤</span>
+          <div class="paper-layer layer-a" aria-hidden="true"></div>
+          <div class="paper-layer layer-b" aria-hidden="true"></div>
+          <div class="paper-layer layer-c" aria-hidden="true"></div>
+
+          <div class="route-line route-1" aria-hidden="true"></div>
+          <div class="route-line route-2" aria-hidden="true"></div>
+          <div class="route-line route-3" aria-hidden="true"></div>
+          <div class="route-line route-4" aria-hidden="true"></div>
+
+          <div class="travel-scraps" aria-hidden="true">
+            <span class="scrap">🍷</span>
+            <span class="scrap">🍋</span>
+            <span class="scrap">🚤</span>
+            <span class="scrap">✈️</span>
           </div>
 
-          <svg class="italy-map" viewBox="0 0 400 560" role="img" aria-labelledby="mapTitle mapDesc">
-            <title id="mapTitle">Illustrated map of Italy</title>
-            <desc id="mapDesc">A stylized boot-shaped map of Italy showing Venice, Florence, Rome, Naples and Amalfi Coast.</desc>
+          <article class="location-marker marker-venice" tabindex="0" aria-label="Venice location marker">
+            <span class="sticker-icon">🎭</span>
+            <span class="city-tag">Venice</span>
+          </article>
 
-            <defs>
-              <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-                <feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity="0.24" />
-              </filter>
-            </defs>
+          <article class="location-marker marker-florence" tabindex="0" aria-label="Florence location marker">
+            <span class="sticker-icon">🖼️</span>
+            <span class="city-tag">Florence</span>
+          </article>
 
-            <path
-              class="italy-shape"
-              d="M191 27c-21 5-39 15-54 31-14 15-23 33-23 51 0 16 8 29 24 40 14 9 22 18 23 30 2 18-10 31-33 42-18 9-29 23-33 43-3 15 4 28 19 37 12 7 19 17 20 30 1 18-8 32-27 44-21 13-31 31-30 54 2 31 27 53 63 56 29 2 53 16 69 35 13 15 31 28 52 30 13 1 24-3 31-12 12-16 8-36-11-53-13-12-30-19-37-36-5-13-2-27 9-39 13-15 33-25 46-41 16-20 18-40 5-57-12-16-34-26-43-44-8-16-2-34 17-47 18-13 30-31 31-52 1-20-8-38-26-53-20-16-44-23-72-19z"
-            />
+          <article class="location-marker marker-rome" tabindex="0" aria-label="Rome location marker">
+            <span class="sticker-icon">🏛️</span>
+            <span class="city-tag">Rome</span>
+          </article>
 
-            <polyline class="route" points="250,95 205,180 225,250 238,315 250,360" />
+          <article class="location-marker marker-naples" tabindex="0" aria-label="Naples location marker">
+            <span class="sticker-icon">🍕</span>
+            <span class="city-tag">Naples</span>
+          </article>
 
-            <g class="location" data-location="Venice" style="--x:250px; --y:95px;">
-              <circle class="pin" r="7" cx="250" cy="95" />
-              <text class="pin-label" x="262" y="90">Venice</text>
-            </g>
-
-            <g class="location" data-location="Florence" style="--x:205px; --y:180px;">
-              <circle class="pin" r="7" cx="205" cy="180" />
-              <text class="pin-label" x="217" y="175">Florence</text>
-            </g>
-
-            <g class="location" data-location="Rome" style="--x:225px; --y:250px;">
-              <circle class="pin" r="7" cx="225" cy="250" />
-              <text class="pin-label" x="237" y="245">Rome</text>
-            </g>
-
-            <g class="location" data-location="Naples" style="--x:238px; --y:315px;">
-              <circle class="pin" r="7" cx="238" cy="315" />
-              <text class="pin-label" x="250" y="310">Naples</text>
-            </g>
-
-            <g class="location" data-location="Amalfi Coast" style="--x:250px; --y:360px;">
-              <circle class="pin" r="7" cx="250" cy="360" />
-              <text class="pin-label" x="262" y="355">Amalfi Coast</text>
-            </g>
-          </svg>
+          <article class="location-marker marker-amalfi" tabindex="0" aria-label="Amalfi Coast location marker">
+            <span class="sticker-icon">🌊</span>
+            <span class="city-tag">Amalfi Coast</span>
+          </article>
         </section>
       </section>
     </main>
