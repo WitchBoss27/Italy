@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Italy Travel Landing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="screen screen-welcome is-active" id="welcomeScreen" aria-label="Welcome screen">
+        <div class="collage-bg" aria-hidden="true">
+          <span class="stamp stamp-1">ITALIA</span>
+          <span class="stamp stamp-2">ESTATE</span>
+          <span class="postcard postcard-1"></span>
+          <span class="postcard postcard-2"></span>
+          <span class="doodle doodle-lemon">🍋</span>
+          <span class="doodle doodle-pizza">🍕</span>
+          <span class="doodle doodle-sea">🌊</span>
+        </div>
+
+        <div class="welcome-card" role="dialog" aria-labelledby="welcomeTitle">
+          <h1 id="welcomeTitle">Welcome to your trip</h1>
+          <p>Please enter your name</p>
+          <form id="nameForm" class="name-form" autocomplete="off">
+            <label class="sr-only" for="nameInput">Your name</label>
+            <input id="nameInput" name="name" type="text" maxlength="30" placeholder="Your name" required />
+            <button type="submit" class="pixel-btn">Enter</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="screen screen-map" id="mapScreen" aria-label="Italy map experience">
+        <header class="map-header">
+          <h2 id="greetingText">Hi, Traveler</h2>
+          <p id="countdownText">0 days until Italy 🇮🇹</p>
+        </header>
+
+        <section class="map-stage" aria-label="Map of Italy with destination markers">
+          <div class="paper-layer layer-a" aria-hidden="true"></div>
+          <div class="paper-layer layer-b" aria-hidden="true"></div>
+          <div class="paper-layer layer-c" aria-hidden="true"></div>
+
+          <div class="route-line route-1" aria-hidden="true"></div>
+          <div class="route-line route-2" aria-hidden="true"></div>
+          <div class="route-line route-3" aria-hidden="true"></div>
+          <div class="route-line route-4" aria-hidden="true"></div>
+
+          <div class="travel-scraps" aria-hidden="true">
+            <span class="scrap">🍷</span>
+            <span class="scrap">🍋</span>
+            <span class="scrap">🚤</span>
+            <span class="scrap">✈️</span>
+          </div>
+
+          <article class="location-marker marker-venice" tabindex="0" aria-label="Venice location marker">
+            <span class="sticker-icon">🎭</span>
+            <span class="city-tag">Venice</span>
+          </article>
+
+          <article class="location-marker marker-florence" tabindex="0" aria-label="Florence location marker">
+            <span class="sticker-icon">🖼️</span>
+            <span class="city-tag">Florence</span>
+          </article>
+
+          <article class="location-marker marker-rome" tabindex="0" aria-label="Rome location marker">
+            <span class="sticker-icon">🏛️</span>
+            <span class="city-tag">Rome</span>
+          </article>
+
+          <article class="location-marker marker-naples" tabindex="0" aria-label="Naples location marker">
+            <span class="sticker-icon">🍕</span>
+            <span class="city-tag">Naples</span>
+          </article>
+
+          <article class="location-marker marker-amalfi" tabindex="0" aria-label="Amalfi Coast location marker">
+            <span class="sticker-icon">🌊</span>
+            <span class="city-tag">Amalfi Coast</span>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
